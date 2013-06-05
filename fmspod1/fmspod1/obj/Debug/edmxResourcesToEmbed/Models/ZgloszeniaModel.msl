@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ZgloszeniaModelStoreContainer" CdmEntityContainer="ZgloszeniaEntities">
+    <EntitySetMapping Name="Zgloszenies">
+      <EntityTypeMapping TypeName="ZgloszeniaModel.Zgloszenie">
+        <MappingFragment StoreEntitySet="Zgloszenie">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="kod_pocztowy" ColumnName="kod_pocztowy" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="tresc_zgloszenia" ColumnName="tresc_zgloszenia" />
+          <ScalarProperty Name="zdjecie" ColumnName="zdjecie" />
+          <ScalarProperty Name="komentarz_admina" ColumnName="komentarz_admina" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

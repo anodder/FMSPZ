@@ -1,0 +1,85 @@
+﻿@model IEnumerable<fmspod1.Models.Zgloszenie>
+       @*fmspod1.Models.ChooseModels*@
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    []
+    @Html.ActionLink("Poka zgloszone", "Status")
+</p>
+@*<div class="editor-label">
+            @Html.LabelFor(model => model.kod)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.kod)
+            @Html.ValidationMessageFor(model => model.kod)
+        </div>
+*@
+<table>
+    <tr>
+        <th>
+            Data
+        </th>
+        <th>
+            status
+        </th>
+        @*<th>
+            kod_pocztowy
+        </th>*@
+        <th>
+            adres
+        </th>
+        <th>
+            tresc_zgloszenia
+        </th>
+        @*<th>
+            zdjecie
+        </th>
+        <th>
+            komentarz_admina
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.kod_pocztowy)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.adres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tresc_zgloszenia)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.zdjecie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.komentarz_admina)
+        </td>*@
+        <td>
+        @*if(@User.Identity.Name=="admin")
+        {*@
+       
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |@*
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        
+        @*}*@
+        </td>
+    </tr>
+}
+
+</table>

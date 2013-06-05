@@ -1,0 +1,53 @@
+﻿@model fmspod1.Models.Zgloszenie
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Zgloszenie</legend>
+
+    <div class="display-label">Data</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data)
+    </div>
+
+    <div class="display-label">status</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+
+    <div class="display-label">kod_pocztowy</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.kod_pocztowy)
+    </div>
+
+    <div class="display-label">adres</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.adres)
+    </div>
+
+    <div class="display-label">tresc_zgloszenia</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tresc_zgloszenia)
+    </div>
+
+    <div class="display-label">zdjecie</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.zdjecie)
+    </div>
+
+    <div class="display-label">komentarz_admina</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.komentarz_admina)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

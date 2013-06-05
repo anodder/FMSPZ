@@ -1,0 +1,7 @@
+c:\users\maciek\documents\visual studio 2010\Projects\fmspod1\fmspod1\bin\fmspod1.dll
+c:\users\maciek\documents\visual studio 2010\Projects\fmspod1\fmspod1\bin\fmspod1.pdb
+c:\users\maciek\documents\visual studio 2010\Projects\fmspod1\fmspod1\bin\EntityFramework.dll
+c:\users\maciek\documents\visual studio 2010\Projects\fmspod1\fmspod1\bin\EntityFramework.xml
+c:\users\maciek\documents\visual studio 2010\Projects\fmspod1\fmspod1\obj\Debug\ResolveAssemblyReference.cache
+c:\users\maciek\documents\visual studio 2010\Projects\fmspod1\fmspod1\obj\Debug\fmspod1.dll
+c:\users\maciek\documents\visual studio 2010\Projects\fmspod1\fmspod1\obj\Debug\fmspod1.pdb
